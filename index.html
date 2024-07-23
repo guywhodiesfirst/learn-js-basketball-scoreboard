@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class = "team-info-container">
+                <h3 class="team-title">HOME</h3>
+                <div class="score-container">
+                    <h2 class="score" id="home-score">0</h2>
+                </div>
+                <div class="button-group">
+                    <button class="score-btn" onclick="incrementScore('home', 1)">+1</button>
+                    <button class="score-btn" onclick="incrementScore('home', 2)">+2</button>
+                    <button class="score-btn" onclick="incrementScore('home', 3)">+3</button>
+                </div>
+            </div>
+            <div class = "team-info-container">
+                <h3 class="team-title">GUEST</h3>
+                <div class="score-container">
+                    <h2 class="score" id="guest-score">0</h2>
+                </div>
+                <div class="button-group">
+                    <button class="score-btn" onclick="incrementScore('guest', 1)">+1</button>
+                    <button class="score-btn" onclick="incrementScore('guest', 2)">+2</button>
+                    <button class="score-btn" onclick="incrementScore('guest', 3)">+3</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="element-container">
+            <h4 class="leader-message" id="leader">Tie</h4>
+        </div>
+        <div class="element-container">
+            <button class="reset-btn" onclick="resetScore()">Reset</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
